@@ -18,16 +18,263 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+
+
+/* -------- */
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-light-yellow {
+  background-color: var(--light-yellow);
+}
+
+.bg-reddish {
+  background-color: var(--reddish);
+}
+.bg-greenish {
+  background-color: var(--greenish);
+}
+
+.bg-brown {
+  background-color: var(--brown);
+}
+
+.bg-light-brown {
+  background-color: var(--light-brown);
+}
+
+.bg-medium-brown {
+  background-color: var(--medium-brown);
+}
+
+.bg-dark-brown {
+  background-color: var(--dark-brown);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+/* --- */
+
+.c-yellow {
+  color: var(--yellow);
+}
+
+.c-light-yellow {
+  color: var(--light-yellow);
+}
+
+.c-reddish {
+  color: var(--reddish);
+}
+
+.c-brown {
+  color: var(--brown);
+}
+
+.c-light-brown {
+  color: var(--light-brown);
+}
+
+.c-medium-brown {
+  color: var(--medium-brown);
+}
+
+.c-dark-brown {
+  color: var(--dark-brown);
+}
+
+.c-white {
+  color: var(--white);
+}
+
+.c-black {
+  background-color: var(--black);
+}
+
+/* --- */
+.bg-background {
+  background-color: var(--background);
+}
+
+
+
+:root {
+  --yellow: #DB9A29;
+  --light-yellow: #F4D6AF;
+  --reddish: #CF6660;
+  --greenish: #28C2AE;
+  --brown: #5F3C30;
+  --light-brown: #2B1913;
+  --medium-brown: #20120E;
+  --dark-brown: #140A08;
+  --dark-red: #E22A2A;
+
+  --white: #ffffff;
+  --black: #000000;
+}
+
+
+
+.header {
+  backdrop-filter: blur(15px) !important;
+  background: #ffffffde;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border-bottom: 1px solid rgba(121, 121, 121, 0.1) !important;
+}
+
+.header ul a:hover {
+  background-color: var(--primary-md-dark);
+}
+
+table,
+.service-conatiner {
+  margin: auto;
+  max-width: 500px;
+  /* min-width: 500px; */
+  width: 100%;
+}
+
+.services-box {
+  margin-top: -200px;
+}
+
+thead th {
+  border: 1px solid #9059ae;
+}
+
+tbody tr td {
+  background-color: #ffffff;
+  color: var(--primary-dark);
+  padding: 12px;
+  border: 1px solid #f1f1f1;
+}
+
+.slider {
+  background-image: url(/cake.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+
+}
+
+.overlay {
+  min-height: 600px;
+  background-color: #16080097;
+}
+
+
+.contact-details svg {
+  font-size: 22px;
+}
+
+
+/* Button------ */
+.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--white);
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.border-btn {
+  border: 1px solid white;
+}
+
+.border-btn:hover {
+  border: 1px solid var(--yellow);
+}
+
+.primary-btn {
+  background-color: var(--yellow);
+}
+
+.btn:hover {
+  background-color: var(--yellow);
+}
+
+/* Button------ */
+
+
+
+
+
+/* Footer------------- */
+.footer a:hover {
+  color: #F9B7FF;
+}
+
+
+.social-icon a:hover {
+  color: var(--light-yellow);
+  background-color: var(--reddish);
+}
+.social-icon a{
+font-size: 18px;
+}
+
+.copywrite a {
+  color: var(--white);
+}
+
+.copywrite a:hover {
+  color: var(--secondary-dark);
+}
+
+
+
+/* Footer------------- */
+
+.menu .bg-brown{
+  width: 50%;
+  padding: 40px;
+}
+.menu .bg-yellow{
+  width: 50%;
+  padding: 40px;
+
+}
+@media only screen and (max-width: 600px) {
+  .services-box {
+    display: block;
+  }
+
+  .service-info {
+    margin: 10px 0;
+  }
+  .menu-col-list{
+    display: block;
+
+
+  }
+  .menu .bg-brown{
+    width: 100%;
+  padding: 25px;
+
+  }
+  .menu .bg-yellow{
+    width: 100%;
+  padding: 25px;
+
   }
 }
